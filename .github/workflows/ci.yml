@@ -63,7 +63,7 @@ jobs:
     steps:
       - name: Actualizar contenedor backend
         run: |
-          cd C:\Users\Predator\Documents\proyecto_docker_compose_limpio\proyecto_docker_compose_limpio
+          cd C:\Users\nico0\OneDrive\Documentos\docker-despliegues-limpio
           docker compose pull backend
           docker compose up -d backend
 
@@ -73,6 +73,6 @@ jobs:
     steps:
       - name: Actualizar contenedor frontend
         run: |
-          cd C:\Users\Predator\Documents\proyecto_docker_compose_limpio\proyecto_docker_compose_limpio
+          cd C:\Users\nico0\OneDrive\Documentos\docker-despliegues-limpio
           docker compose pull frontend
           docker compose up -d frontend
