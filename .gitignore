@@ -1,0 +1,16 @@
+# Secretos: nunca se versionan
+.env
+.env.local
+
+# Java / Maven
+target/
+*.class
+
+# Eclipse
+test15b/.metadata/
+test15b/.settings/
+test15b/.classpath
+test15b/.project
+
+# Logs
+*.log
