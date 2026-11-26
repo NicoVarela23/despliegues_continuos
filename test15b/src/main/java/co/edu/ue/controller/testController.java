@@ -22,10 +22,7 @@ public class testController {
 	public String hello() {
 		return "Hola estudiantes de la 15B";
 	}
-	@GetMapping(value="/parcial")
-	public String parcial() {
-		return "Hola parcial";
-	}
+	
 	@GetMapping(value="/saludando")
 	public String hola() {
 		return "Hola estudiantes de la 16a";

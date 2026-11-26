@@ -8,15 +8,13 @@
 <body>
 
     <h1>Consumo API Spring Boot</h1>
-    <p><small>Despliegue continuo activo version 2.2</small></p>
+    <p><small>Despliegue continuo activo version 3.0</small></p>
 
     <h2>Saludar</h2>
     <button onclick="saludar()">Probar /saludar</button>
     <p id="resultadoSaludo"></p>
 
-     <h2>parcial</h2>
-    <button onclick="parcial()">Probar /parcial</button>
-    <p id="resultadoParcial"></p>
+    
 
    
     <h2>Sumar dos números</h2>
@@ -45,17 +43,7 @@
         }
 
 
-        function parcial() {
-            fetch(`${API_URL}/parcial`)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("resultadoParcial").innerText = data;
-                })
-                .catch(error => {
-                    document.getElementById("resultadoParcial").innerText = "Error al consumir /parcial";
-                    console.error(error);
-                });
-        }
+    
 
         function sumar() {
             const numero1 = document.getElementById("numero1").value;
